@@ -98,13 +98,11 @@ namespace MethodsWithLoopsAndConditionals
         {
             Console.Write("Please enter a number: ");
             var userInput = int.Parse(Console.ReadLine());
-
-            int[] multiplicationTable = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
-
-            foreach(int num in multiplicationTable)
+                        
+            for (int i = 1; i <= 12; i++)
             {
-                Console.WriteLine(userInput * num);
-            }
+                Console.WriteLine(i* userInput);
+            }            
         }
     }
 }
